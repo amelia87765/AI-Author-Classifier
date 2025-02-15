@@ -1,22 +1,21 @@
-Opis projektu
+Opis projektu<br>
 Projekt wykorzystuje sieci neuronowe LSTM do klasyfikacji autorów tekstów literackich na podstawie ich stylu pisania. Model został wytrenowany na zbiorze tekstów różnych autorów i zapisany, co pozwala na jego późniejsze użycie bez konieczności ponownego treningu.
 
-Architektura Modelu:
-
-Wejście: Tekst przekształcony za pomocą Tokenizera
-Embedding Layer: Reprezentacja słów w postaci wektorów
-Bidirectional LSTM Layer: Analiza sekwencji tekstu w obu kierunkach, wychwytująca kontekst słów
-Dense Layer (ReLU): Ekstrakcja istotnych cech stylu pisania
-Output Layer (Softmax): Klasyfikacja do konkretnego autora
+Architektura Modelu:<br>
+Wejście: Tekst przekształcony za pomocą Tokenizera<br>
+Embedding Layer: Reprezentacja słów w postaci wektorów<br>
+Bidirectional LSTM Layer: Analiza sekwencji tekstu w obu kierunkach, wychwytująca kontekst słów<br>
+Dense Layer (ReLU): Ekstrakcja istotnych cech stylu pisania<br>
+Output Layer (Softmax): Klasyfikacja do konkretnego autora<br>
 
 Najlepsza dokładność modelu: 94.44%
 
-Struktura repozytorium
-train_model.py – kod do trenowania modelu (nie jest wymagany do samego użycia)
-predict_author.py – skrypt do przewidywania autora tekstu
-author_recognition_model.keras – zapisany model
-tokenizer.pkl – tokenizer używany podczas treningu
+Struktura repozytorium<br>
+train_model.py – kod do trenowania modelu (nie jest wymagany do samego użycia)<br>
+predict_author.py – skrypt do przewidywania autora tekstu<br>
+author_recognition_model.keras – zapisany model<br>
+tokenizer.pkl – tokenizer używany podczas treningu<br>
 
-Uruchomienie:
-pip install -r requirements.txt
+Uruchomienie:<br>
+pip install -r requirements.txt<br>
 python predict_author.py
